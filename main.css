@@ -1,0 +1,425 @@
+html,
+body {
+   
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Css style for tradesfactor icon */
+.tradesfactor {
+    /* the text will not have any underlines, overlines, line-throughs, or other text decorations  */
+    text-decoration: none;
+    /* if this font family is not avaiable the browser will use a cursive font  */
+    font-family: 'Sedgwick Ave Display', cursive;
+    /* the size of the text */
+    font-size: 24px;
+    /* shadow effect */
+    text-shadow: 2px 2px 0px rgb(171, 171, 171);
+    color: #eb5444;
+    /* It creates space to the left of these elements, pushing them away from the left edge of their container. */
+    margin-left: 60px;
+    /* changes the mouse cursor */
+    cursor: pointer;
+}
+
+/* Css style for navbar */
+.navbar {
+
+    /* elements of navbar use flexbox laoyout  */
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    background-color: transparent;
+    z-index: 100;
+}
+
+
+
+/* Css style for navbar elements  */
+.navbar a {
+    color: rgb(20, 19, 19);
+    text-decoration: none;
+    margin: 0;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    display: flex;
+}
+
+/*Css style for dropdown option */
+.dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 300px;
+    z-index: 1;
+    top: 100%;
+    right: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 27px;
+    padding: 60px;
+}
+
+.dropdown-content a {
+    color: rgb(97, 92, 92);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/*Css style for dropdown icon */
+.dropdown-icon {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.expanded .dropdown-content {
+    display: block;
+}
+
+/* icon css style wich is inside dropdown section */
+h4 {
+    text-decoration: none;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 24px;
+    text-shadow: 2px 2px 0px rgb(171, 171, 171);
+    color: #eb5444;
+
+}
+
+/* Css styel for  label New  */
+.label {
+    display: inline-block;
+    min-height: 0;
+    padding: 7px 12px;
+    border-radius: 50px;
+    background-color: #eb5444;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+/* Css style for  white-square div*/
+.white-square {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    background: linear-gradient(to right, rgba(235, 234, 234, 0.6) 30%, rgba(255, 255, 255, 1));
+    top: calc(50% + 10px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    margin-top: 2%;
+    z-index: 1;
+}
+
+/* Css style for the pharagraph inside  white-square div */
+p {
+    margin-left: 40px;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #535252;
+
+}
+
+.position {
+
+    margin-left: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(67, 67, 67);
+}
+
+.orange-text {
+    color: #eb5444;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+/* Css style of the image choosen */
+.tradesfactor-image {
+    position: absolute;
+    left: 600px;
+    width: 600px;
+    margin-bottom: 150px;
+}
+
+.new-div-1 {
+    margin-top: 700px;
+    margin-left: 80px;
+    font-size: 40px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Css style for  divs card */
+.card {
+    margin-left: 20px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    color: #eb5444;
+
+}
+
+.card h1 {
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: 20%;
+    margin-right: 200px;
+}
+
+.paragraph-div {
+    padding-right: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 600px;
+}
+
+.card-container-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+
+
+}
+
+
+.column {
+    flex: 0 0 calc(50% - 5px);
+}
+
+/* Csss style for other cards   */
+.card .card-content {
+    position: absolute;
+    top: -25px;
+    margin-top: 750px;
+}
+
+.card .card-content-1 {
+    position: absolute;
+    top: -20px;
+    left: 490px;
+    margin-top: 750px;
+}
+
+.card .card-content-2 {
+    position: absolute;
+    top: -20px;
+    right: 250px;
+    margin-top: 750px;
+}
+
+.card .card-content-3 {
+    position: absolute;
+    top: 276px;
+    left: 174px;
+    margin-top: 750px;
+}
+
+.card .card-content-4 {
+    position: absolute;
+    top: 274px;
+    left: 489px;
+    margin-top: 750px;
+}
+
+.card .card-content-5 {
+    position: absolute;
+    top: 274px;
+    left: 816px;
+    margin-top: 750px;
+}
+
+/*css style of  email input  */
+.email-input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 300px;
+}
+
+
+.email-input-container input[type="text"] {
+    border-style: none none solid;
+    border-bottom: 2px solid rgb(241, 239, 239);
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5px 80px;
+}
+
+.email-input-container input[type="text"]:focus {
+    border-bottom: 2px solid black;
+}
+
+/*Css style for request button */
+.demo-button {
+    background-color: #e94331;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 13px;
+    margin-left: 13px;
+    border-radius: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 47px;
+}
+
+/* Css style for hover effect */
+.demo-button:hover {
+    background-color: #41403f;
+}
+
+/* Css style for orange line added*/
+.orange-line {
+    background-color: #e94331;
+    height: 2px;
+    max-width: 200px;
+    margin: 10px auto;
+    margin-top: 50px;
+}
+
+.center {
+    text-align: center;
+    color: #e94331;
+    margin: 50px auto;
+    font-family: sans-serif;
+    letter-spacing: -1px;
+    text-indent: -1px;
+
+}
+
+/* Css style for choosen images */
+.image-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 100px;
+    height: auto;
+
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    margin: 20px;
+}
+
+.greys-space {
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+}
+
+.card-holder {
+    background-color: rgb(248, 239, 217);
+    border: 1px solid gray;
+    border-radius: 27px;
+    width: 400px;
+    margin-top: 10px;
+    margin-right: 30%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 60px;
+}
+
+.another-card {
+    background-color: rgb(248, 239, 217);
+    border: 1px solid gray;
+    border-radius: 27px;
+    margin-left: 60%;
+}
+
+.select-button {
+    position: relative;
+    margin-right: 600px;
+    margin-top: 100px;
+    border-radius: 27px;
+    height: 50px;
+    padding: 0 34px 0 25px;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.select-button:hover {
+
+    color: #f8750a;
+}
+
+footer {
+    background-color: #403d3d;
+    /* Black background color */
+    color: #fff;
+    /* Text color */
+    padding: 10px;
+    /* Padding to create space around the content */
+    text-align: center;
+    /* Center-align the content */
+}
+
+footer a {
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin: 0 10px;
+    display: flex;
+}
+.social-icons {
+    text-align: center;
+    display:flex;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}

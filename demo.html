@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="demo.css">
+
+
+</head>
+
+<body>
+    <a href="main.html" class="tradesfactor">TradesFactor</a>
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="menu">
+            <a href="#">Demo</a>
+            <a href="#">Home</a>
+            <div class="dropdown">
+                <!-- Dropdown section for Solutions inside the navbar -->
+                <a href="#">Solutions<span class="dropdown-icon" onclick="toggleSubMenu('solutions')">&#9661;</span></a>
+                <div class="dropdown-content solutions">
+                    <a href="#">For Trade Workers</a>
+                    <a href="#">For Employers</a>
+                    <a href="#">For Students</a>
+                    <a href="#">For Schools</a>
+                    <a href="#">Tools of The Trades</a>
+                    <hr>
+                    <h4>TradesFactor</h4>
+                </div>
+            </div>
+            <!-- Dropdown section for Resources inside navbar  -->
+            <div class="dropdown">
+                <a href="#">Resources<span class="dropdown-icon" onclick="toggleSubMenu('resources')">&#9661;</span></a>
+                <div class="dropdown-content resources">
+                    <a href="#">Who we are</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Support</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Policy</a>
+                    <hr>
+                    <h4>TradesFactor</h4>
+                </div>
+            </div>
+        </div>
+        <a href="#">Pricing</a>
+        <!-- Dropdown section for Log in inside the navbar -->
+        <div class="dropdown">
+            <a href="#">Log In<span class="dropdown-icon" onclick="toggleSubMenu('login')">&#9661;</span></a>
+            <div class="dropdown-content login">
+                <a href="#">Sign up</a>
+                <a href="#">Log in</a>
+                <hr>
+                <h4>TradesFactor</h4>
+            </div>
+        </div>
+    </div>
+    <div class="red-div">
+        <div class="container">
+            <h1>See What</h1>
+            <h1>TradesFactor</h1>
+            <h1>Can Do</h1>
+            <p>Request a demo now to discover how TradesFactor creates a digital passport for labor and brings job site,
+                shop floor and classroom data together.</p>
+        </div>
+        <form>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Surname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Business Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your business email address">
+                </div>
+                <div class="form-group">
+                    <label for="company-name">Company Name</label>
+                    <input type="text" id="company-name" placeholder="Company Name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Business or Cell Phone</label>
+                    <input type="tel" id="phone" placeholder="Business or Cell Phone">
+                </div>
+                <div class="form-group">
+                    <label for="help">How can we help?</label>
+                    <textarea id="help" placeholder="How can we help"></textarea>
+                </div>
+                <button type="form-button" style="border-radius: 27px; color: rgb(254, 93, 34);margin-left: 50%;">Send</button>
+            </div>
+        </form>
+    </div>
+    <script src="demo.js"></script>
+</body>
+
+</html>

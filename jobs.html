@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jobs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jobs.css">
+</head>
+
+<body>
+    <a href="main.html" class="tradesfactor">TradesFactor</a>
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="menu">
+            <a href="#">Demo</a>
+            <a href="#">Home</a>
+            <div class="dropdown">
+                <!-- Dropdown section for Solutions inside the navbar -->
+                <a href="#">Solutions<span class="dropdown-icon" onclick="toggleSubMenu('solutions')">&#9661;</span></a>
+                <div class="dropdown-content solutions">
+                    <a href="#">For Trade Workers</a>
+                    <a href="#">For Employers</a>
+                    <a href="#">For Students</a>
+                    <a href="#">For Schools</a>
+                    <a href="#">Tools of The Trades</a>
+                    <hr>
+                    <h4>TradesFactor</h4>
+                </div>
+            </div>
+            <!-- Dropdown section for Resources inside navbar  -->
+            <div class="dropdown">
+                <a href="#">Resources<span class="dropdown-icon" onclick="toggleSubMenu('resources')">&#9661;</span></a>
+                <div class="dropdown-content resources">
+                    <a href="#">Who we are</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Support</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Policy</a>
+                    <hr>
+                    <h4>TradesFactor</h4>
+                </div>
+            </div>
+        </div>
+        <a href="#">Pricing</a>
+        <!-- Dropdown section for Log in inside the navbar -->
+        <div class="dropdown">
+            <a href="#">Log In<span class="dropdown-icon" onclick="toggleSubMenu('login')">&#9661;</span></a>
+            <div class="dropdown-content login">
+                <a href="#">Sign up</a>
+                <a href="#">Log in</a>
+                <hr>
+                <h4>TradesFactor</h4>
+            </div>
+        </div>
+    </div>
+    <!-- Input type section -->
+    <div class="header-container">
+        <h1><b>Find your job in the trades</b></h1>
+        <p class="form-label">Trades</p>
+        <div class="custom-div">
+            <input type="text" placeholder="Boilermaker, Carpenter, Pipefitter">
+            <p class="form-label">Location</p>
+            <input type="text" placeholder="Enter your location">
+            <button class="demos-button"><b>Search</b></button>
+        </div>
+        <!-- Open job positions section -->
+        <div class="grey-div">
+            <h1>Open Positions</h1>
+            <div class="pagination">
+                <button id="previous" class="pagination-button" onclick="previousPage()"><b>Previous</b></button>
+                <div class="sseparator">
+                    <span id="separator" style="color: #e94331;">|</span>
+                    <span id="pageNumber" style="color: #e94331;">1</span>
+                    <span id="separator" style="color: #e94331;"> |</span>
+                </div>
+                <button id="next" class="pagination-button" onclick="nextPage()"><b>Next</b></button>
+            </div>
+            <!-- Dropdown section for selecting options of open positions -->
+            <div class="dropdown">
+                <span id="showing" onclick="toggleDropdown();updateWhiteDivs()"><i class="icon" id="dropdown-icon">▼</i>
+                    Showing</span>
+                <div class="dropdown-contentss" id="showing-options">
+                    <a href="#" id="option5" onclick="selectOption(5)">5</a>
+                    <a href="#" id="option10" onclick="selectOption(10)">10</a>
+                    <a href="#" id="option20" onclick="selectOption(20)">20</a>
+                    <a href="#" id="option50" onclick="selectOption(50)">50</a>
+                    <a href="#" id="option12" onclick="selectOption(12)" style="display: none;">Last 12</a>
+                </div>
+            </div>
+            <button class="center-button">All</button>
+            <!-- First div sevtion that contains information about job position -->
+            <div class="white-div">
+                <img src="morgan.png" alt="morgan">
+                <p><strong>Welders- All</strong></p>
+                <p><strong>Shifts</strong></p>
+                <p>-per</p>
+                <p>year</p>
+                <button class="details-button">Details</button>
+                <!-- Detail section inserted when press details button -->
+                <div class="details-section" style="display: none;">
+                    <hr>
+                    <a href="https://www.tradesfactor.com/company-jobs?company=1">Morgan Corporation</a>
+                    <h4>Morgan Town</h4>
+                    <h3>Job Description</h3>
+                    <p class="duties-title">key duties & responsibilities :</p>
+                    <p><i>Duties and responsibilities of skilled and unskilled welders differ as per their expertise
+                            levels. In general, the duties and responsibilities of a welder are:</i>
+                    </p>
+                    <ol>
+                        <li>Weld metals according to customer or employer requirements.</li>
+                        <li>Ensure high safety measures while working, such as donning protective gear for the face and
+                            body.</li>
+                        <li>Operate heavy equipment, such as industrial saws.</li>
+                        <li>Examine the equipment after welding and advise maintenance of defects.</li>
+                        <li>Plan/set up welding operations before beginning.</li>
+                        <li>Read blueprints and weld according to the plan.</li>
+                        <li>Senior welders will supervise welding operations of junior welders.</li>
+                        <li>Train junior and entry-level welders.</li>
+                    </ol>
+                    <h4 style="text-decoration: underline; color: black; white-space: nowrap;">Expertise Require</h4>
+                    <div class="list-order">
+                        <ol>
+                            <li>A thorough knowledge of the different methods and symbols of welding and ability to
+                                successfully pass the company certification for all welding applications it certifies
+                                on.</li>
+                            <li>A thorough knowledge about safety precautions while working.</li>
+                            <li>Ability to read blueprints and understand instructions.</li>
+                            <li>Ability to analyze work at hand and execute welding procedure per training
+                                certifications.</li>
+                            <li>Good decision-making skills.</li>
+                            <li>Ability to work in heat and smoke.</li>
+                            <li>Must pass a medical questionnaire.</li>
+                            <li>Must be able to finish work within a given time.</li>
+                        </ol>
+                        <button class="apply-button">Apply</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="job.js"></script>
+</body>
+
+</html>
